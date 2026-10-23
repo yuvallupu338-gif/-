@@ -1,0 +1,19 @@
+{
+  "name": "levelup-ai",
+  "private": true,
+  "type": "module",
+  "description": "agent project: levelup-ai",
+  "scripts": {
+    "check": "tsc --noEmit",
+    "test": "tsx --test bot/lib/validate-game-spec.test.ts",
+    "dev": "bdk dev"
+  },
+  "dependencies": {
+    "@grok/agent-sdk": "^0.2.28",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "typescript": "6.0.3"
+  }
+}
