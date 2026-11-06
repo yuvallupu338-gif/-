@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Rubik", "Arial Hebrew", "Noto Sans Hebrew", "Segoe UI", sans-serif;
+  --color-duo-green: #58cc02;
+  --color-duo-green-dark: #46a302;
+  --color-duo-green-soft: #d7ffb8;
+  --color-duo-blue: #1cb0f6;
+  --color-duo-blue-dark: #1899d6;
+  --color-duo-blue-soft: #ddf4ff;
+  --color-duo-red: #ff4b4b;
+  --color-duo-red-dark: #ea2b2b;
+  --color-duo-red-soft: #ffdfe0;
+  --color-duo-yellow: #ffc800;
+  --color-duo-yellow-dark: #e5a800;
+  --color-duo-orange: #ff9600;
+  --color-duo-purple: #ce82ff;
+  --color-duo-purple-dark: #a568cc;
+  --color-duo-purple-soft: #f3e8ff;
+  --color-ink: #3c3c3c;
+  --color-muted: #777777;
+  --color-line: #e5e5e5;
+  --color-paper: #f7f7f7;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #dff4ff;
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+button,
+input,
+summary {
+  font-family: inherit;
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+input[type="range"] {
+  accent-color: #1cb0f6;
+  height: 28px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}
